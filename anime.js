@@ -1,11 +1,8 @@
-export function animate(scene, cube, camera, renderer) {
+export function animate(scene, cube, camera, renderer, controls) {
     function animateFrame() {
         requestAnimationFrame(animateFrame);
-
-        cube.rotation.x += 0.01;
-        cube.rotation.y += 0.01;
-
         renderer.render(scene, camera);
+        controls.update();
     }
 
     animateFrame();
