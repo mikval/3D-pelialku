@@ -25,6 +25,7 @@ export function initScene() {
             }
         }
     }
+    
 
     camera.position.z = 20;
     camera.position.y = 20;
