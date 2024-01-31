@@ -26,7 +26,9 @@ export function initScene() {
         }
     }
 
-    camera.position.z = 5;
+    camera.position.z = 20;
+    camera.position.y = 20;
+    camera.position.x = 20;
 
     return { scene, camera, renderer };
 }
